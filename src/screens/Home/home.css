@@ -2,3 +2,9 @@
     display: 'flex';
     flex: 1;
 }
+
+.screenContainer {
+    flex: 1;
+    padding-top: 75px;
+    width: 100vw;
+}

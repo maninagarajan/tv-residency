@@ -1,0 +1,118 @@
+.facilitiesContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    flex-direction: column;
+}
+
+.sectionHeaderText {
+    font-family: "Ibarra Real Nova", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.7vw;
+    color: var(--gold-orange);
+}
+
+.facilityDiv {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin-left: 12.5vw;
+    margin-right: 12.5vw;
+}
+
+.facilityCard {
+    width: 25vw;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.facilityCard img {
+    width: 3vw;
+    height: 3vw;
+    margin-right: 12px;
+}
+
+.facilityCard span {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.85vw;
+    color: var(--black);
+    opacity: 0.95;
+}
+
+@media (max-width: 1000px) {
+    .sectionHeaderText {
+        font-family: "Ibarra Real Nova", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2.5vw;
+        color: var(--gold-orange);
+    }
+
+    .facilityDiv {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        align-items: stretch;
+        flex-wrap: wrap;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    
+    .facilityCard {
+        width: 40vw;
+        flex-direction: row;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .facilityCard img {
+        width: 6vw;
+        height: 6vw;
+        margin-right: 12px;
+    }
+    
+    .facilityCard span {
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.7vw;
+        color: var(--black);
+        opacity: 0.95;
+    }
+}
+@media (max-width: 650px) {
+    .sectionHeaderText {
+        font-family: "Ibarra Real Nova", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 3.5vw;
+        color: var(--gold-orange);
+    }
+
+    .facilityCard span {
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2vw;
+        color: var(--black);
+        opacity: 0.95;
+    }
+}

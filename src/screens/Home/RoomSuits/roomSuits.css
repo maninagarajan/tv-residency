@@ -1,0 +1,49 @@
+.roomsContainer {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    flex-direction: column;
+}
+
+.timingContainer {
+    flex-direction: row;
+    display: inline-flex;
+}
+
+.timingDiv {
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+}
+
+.timingDiv:first-child {
+    margin-right: 5vw;
+}
+
+.timingDiv img {
+    width: 1.8vw;
+    height: 1.8vw;
+    margin-right: 10px;
+}
+
+.timingDiv span {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: var(--dark-grey);
+    font-size: 1.5vw;
+    opacity: 0.9;
+}
+
+.roomSectionHeaderText {
+    font-family: "Ibarra Real Nova", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.7vw;
+    color: var(--gold-orange);
+    margin-top: 5vh;
+}

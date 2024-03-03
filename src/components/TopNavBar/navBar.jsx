@@ -1,6 +1,5 @@
 import { NavLink } from 'react-router-dom'
 import './navBar.css'
-// import { LogoImg, hamburgerIcon } from '../../constants/imageUrls'
 import { useState } from 'react'
 import LogoImg from '../../assets/images/Logo_White.png'
 import hamburgerImg from '../../assets/images/hamburger.png'
@@ -14,7 +13,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="container">
+      <div className="nav-container">
         <NavLink to="/">
           <img src={LogoImg} alt='Temple View Residency' className='nav-logo' />
         </NavLink>

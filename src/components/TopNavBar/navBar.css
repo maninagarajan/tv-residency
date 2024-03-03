@@ -3,7 +3,7 @@ body {
   background-color: var(--light-orange);
 }
 
-.container {
+.nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,7 +17,8 @@ body {
   background-color: var(--blue-grey);
   position: fixed;
   top: 0;
-  left: 0
+  left: 0;
+  z-index: 1000;
 }
 
 .nav-logo {
@@ -70,13 +71,13 @@ body {
   height: 2px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1020px) {
   .nav-elements ul li:not(:last-child) {
     margin-right: 30px;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .menu-icon {
     display: block;
     cursor: pointer;
