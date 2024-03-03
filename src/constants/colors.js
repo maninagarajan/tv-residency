@@ -1,0 +1,16 @@
+export const colors = {
+    WHITE: 'rgb(255, 255, 255)',
+    BLACK: 'rgb(0, 0, 0)',
+    GOLD_ORANGE: 'rgb(194, 112, 15)',
+    GOLD_RED: 'rgb(199, 80, 0)',
+    GOLD_YELLOW: 'rgb(205, 142, 0)',
+    GREY: 'rgb(217, 217, 217)',
+    DARK_GREY: 'rgb(108, 108, 108)',
+    LIGHT_ORANGE: 'rgb(251, 248, 239)',
+    TRANSPARENT: 'transparent',
+    GREY_BG: 'rgb(245, 244, 240)',
+    BLUE_GREY: 'rgb(73, 80, 87)',
+    LIGHT_WHITE: 'rgb(255, 253, 245)',
+    DARK_ORANGE_LIGHT: 'rgba(78, 53, 19, 0.3)',
+    LIGHT_BLACK: 'rgba(0, 0, 0, 0.3)',
+}
