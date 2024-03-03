@@ -1,22 +1,34 @@
 import React from 'react';
 import './facilities.css';
+import cctvImg from '../../assets/images/About_Us/Features/cctv.png';
+import waterSupplyImg from '../../assets/images/About_Us/Features/water_supply.png';
+import electricityImg from '../../assets/images/About_Us/Features/electricity.png';
+import parkingImg from '../../assets/images/About_Us/Features/parking.png';
+import wifiImg from '../../assets/images/About_Us/Features/wifi.png';
+import drinkWaterImg from '../../assets/images/About_Us/Features/drink_water.png';
+import waterHeaterImg from '../../assets/images/About_Us/Features/water_heater.png';
+import rampImg from '../../assets/images/About_Us/Features/ramp.png';
+import elevatorImg from '../../assets/images/About_Us/Features/elevator.png';
+import tvImg from '../../assets/images/About_Us/Features/tv.png';
+import templeImg from '../../assets/images/About_Us/Features/temple.png';
+import foodImg from '../../assets/images/About_Us/Features/food.png';
 
 const facilitiesList = [
-    { label: 'Ultra HD CCTV Surveillance', img: require('../../assets/images/About_Us/Features/cctv.png') },
-    { label: '24 Hours Water Supply', img: require('../../assets/images/About_Us/Features/water_supply.png') },
-    { label: '24 Hours Genset Backup', img: require('../../assets/images/About_Us/Features/electricity.png') },
+    { label: 'Ultra HD CCTV Surveillance', img: cctvImg },
+    { label: '24 Hours Water Supply', img: waterSupplyImg },
+    { label: '24 Hours Genset Backup', img: electricityImg },
 
-    { label: 'Spacious Car Parking', img: require('../../assets/images/About_Us/Features/parking.png') },
-    { label: 'Wifi Connectivity', img: require('../../assets/images/About_Us/Features/wifi.png') },
-    { label: 'Provide Drinking Water', img: require('../../assets/images/About_Us/Features/drink_water.png') },
+    { label: 'Spacious Car Parking', img: parkingImg },
+    { label: 'Wifi Connectivity', img: wifiImg },
+    { label: 'Provide Drinking Water', img: drinkWaterImg },
 
-    { label: 'Water Heater for All Rooms', img: require('../../assets/images/About_Us/Features/water_heater.png') },
-    { label: 'Ramp Facility', img: require('../../assets/images/About_Us/Features/ramp.png') },
-    { label: 'Lift Facility', img: require('../../assets/images/About_Us/Features/elevator.png') },
+    { label: 'Water Heater for All Rooms', img: waterHeaterImg },
+    { label: 'Ramp Facility', img: rampImg },
+    { label: 'Lift Facility', img: elevatorImg },
 
-    { label: 'LED TV in All Rooms', img: require('../../assets/images/About_Us/Features/tv.png') },
-    { label: '300mts to Temple', img: require('../../assets/images/About_Us/Features/temple.png') },
-    { label: 'Food Arrangement based on Customer Needs', img: require('../../assets/images/About_Us/Features/food.png') },
+    { label: 'LED TV in All Rooms', img: tvImg },
+    { label: '300mts to Temple', img: templeImg },
+    { label: 'Food Arrangement based on Customer Needs', img: foodImg },
 ]
 
 const FacilityItem = ({ item }) => {

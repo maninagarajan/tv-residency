@@ -1,11 +1,12 @@
 import React from 'react';
 import './gopuram.css';
+import gopuramImg from '../../../assets/images/Home/gopuram_view.png'
 
 export const GopuramView = () => {
     return (
         <div className='gopuramContainer'>
             <img
-                src={require('../../../assets/images/Home/gopuram_view.png')}
+                src={gopuramImg}
                 alt='Gopuram view'
                 className='mobileImg'
             />
@@ -19,7 +20,7 @@ export const GopuramView = () => {
                 <p>(Gopura Dharisanam Kodi Punniyam)</p>
             </div>
             <img
-                src={require('../../../assets/images/Home/gopuram_view.png')}
+                src={gopuramImg}
                 alt='Gopuram view'
                 className='desktopImg'
             />
