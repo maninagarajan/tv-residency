@@ -6,6 +6,8 @@ import { FacilitiesServices } from '../../components/FacilitiesServices/faciliti
 import { GopuramView } from './GopuramView/gopuram';
 import { RoomsSuits } from './RoomSuits/roomSuits';
 import { LocationCard } from './Location/location';
+import { GalleryView } from './GalleryView/galleryView';
+import { NearestTransporation } from './NearestTransportation/transportation';
 
 export const HomeComponent = () => {
     return (
@@ -17,6 +19,8 @@ export const HomeComponent = () => {
                 <GopuramView />
                 <RoomsSuits />
                 <LocationCard />
+                <GalleryView />
+                <NearestTransporation />
             </div>
         </div>
     )

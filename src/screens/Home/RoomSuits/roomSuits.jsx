@@ -83,9 +83,7 @@ export const RoomsSuits = () => {
                 {roomsList?.slice(0, 3).map((item, index) => <RoomItem key={item.room} item={item} index={index} />)}
             </div>
 
-            <div
-                className='roomCardCarousel'
-            >
+            <div className='roomCardCarousel'>
                 <div className='scrollContainer'>
                 {roomsList?.slice(0, 3).map((item, index) => <RoomItem key={item.room} item={item} index={index} />)}
                 </div>
