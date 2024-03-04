@@ -25,8 +25,8 @@
 }
 
 .timingDiv img {
-    width: 1.8vw;
-    height: 1.8vw;
+    width: 1.5vw;
+    height: 1.5vw;
     margin-right: 10px;
 }
 
@@ -34,7 +34,7 @@
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     color: var(--dark-grey);
-    font-size: 1.5vw;
+    font-size: 1.4vw;
     opacity: 0.9;
 }
 
@@ -45,7 +45,7 @@
     font-style: normal;
     font-size: 1.7vw;
     color: var(--gold-orange);
-    margin-top: 5vh;
+    margin-top: 7vh;
 }
 
 .roomSection {
@@ -62,6 +62,10 @@
     margin-top: 4vh;
 }
 
+.bottomViewSection {
+    display: none;
+}
+
 .viewSection p {
     font-family: "Ibarra Real Nova", serif;
     font-weight: 300;
@@ -73,10 +77,11 @@
 
 .roomCard {
     width: 20vw;
-    margin-left: 1vw;
-    margin-right: 1vw;
+    margin-left: 0.8vw;
+    margin-right: 0.8vw;
     background-color: var(--grey-bg) !important;
     border-radius: 8px !important;
+    box-shadow: var(--grey) 0 4px 4px 0 !important;
 }
 
 .roomCard img {
@@ -89,6 +94,10 @@
     align-items: center;
     justify-content: space-between;
     display: flex;
+}
+
+.roomCardCarousel {
+    display: none
 }
 
 .bottomRoomCard {
@@ -146,4 +155,270 @@
     font-size: 0.9vw;
     color: var(--dark-grey);
     opacity: 0.95;
+}
+
+@media (max-width: 1000px) {
+    .roomSectionHeaderText {
+        font-family: "Ibarra Real Nova", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2.5vw;
+        color: var(--gold-orange);
+        margin-top: 4vh;
+    }
+
+    .roomsContainer {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 2vh;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        flex-direction: column;
+    }
+
+    .timingDiv img {
+        width: 2vw;
+        height: 2vw;
+        margin-right: 10px;
+    }
+
+    .timingDiv span {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        color: var(--dark-grey);
+        font-size: 2vw;
+        opacity: 0.9;
+    }
+
+    .roomCard {
+        width: 25vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        background-color: var(--grey-bg) !important;
+        border-radius: 8px !important;
+        box-shadow: var(--grey) 0 4px 4px 0 !important;
+    }
+
+    .roomCard img {
+        width: 25vw;
+        height: calc(25vw * 0.73);
+    }
+
+    .bottomRoomCard {
+        width: 25vw;
+        height: calc(25vw * 0.73);
+        padding: 8px;
+    }
+
+    .bottomRoomCard h3 {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        color: var(--black);
+        font-size: 1.6vw;
+        margin: 0 8px 0 0;
+    }
+
+    .bottomRoomCard h4 {
+        font-family: 'Lato', sans-serif;
+        font-weight: 500;
+        color: var(--gold-orange);
+        font-size: 2vw;
+        margin: 0;
+    }
+
+    .bottomRoomCard h4 span {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        color: var(--dark-grey);
+        font-size: 1.2vw;
+        margin: 0;
+    }
+
+    .bottomRoomCard .bottomIconView {
+        flex-direction: row;
+        align-items: center;
+        display: flex;
+        margin-top: 12px;
+    }
+
+    .bottomRoomCard .bottomIconView img {
+        width: 1.5vw;
+        height: 1.5vw;
+        margin-right: 6px;
+    }
+
+    .bottomRoomCard .bottomIconView span {
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.4vw;
+        color: var(--dark-grey);
+        opacity: 0.95;
+    }
+
+    .viewSection p {
+        font-family: "Ibarra Real Nova", serif;
+        font-weight: 300;
+        color: var(--black);
+        font-size: 1.5vw;
+        text-decoration: underline;
+        opacity: 0.95;
+    }
+}
+
+@media (max-width: 650px) {
+    .roomSectionHeaderText {
+        font-family: "Ibarra Real Nova", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 3.5vw;
+        color: var(--gold-orange);
+        margin-top: 4vh;
+    }
+
+    .timingContainer {
+        flex-direction: column;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .timingDiv img {
+        width: 2.8vw;
+        height: 2.8vw;
+        margin-right: 10px;
+    }
+
+    .timingDiv span {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        color: var(--dark-grey);
+        font-size: 3vw;
+        opacity: 0.9;
+    }
+
+    .timingDiv:first-child {
+        margin-right: 0vw;
+        margin-bottom: 6px;
+    }
+
+    .viewSection {
+        display: none;
+    }
+
+    .bottomViewSection {
+        display: flex;
+    }
+
+    .bottomViewSection .navLink {
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+    }
+
+    .bottomViewSection p {
+        font-family: "Ibarra Real Nova", serif;
+        font-weight: 300;
+        color: var(--black);
+        font-size: 3vw;
+        text-decoration: underline;
+        opacity: 0.95;
+        display: inline;
+    }
+
+    .bottomViewSection img {
+        width: 3.5vw;
+        height: 3.5vw;
+        margin-left: 2px;
+    }
+
+    .roomCardContainer {
+        display: none;
+    }
+
+    .roomCardCarousel {
+        display: flex;
+        width: 100vw;
+    }
+
+    .roomCard {
+        width: 60vw;
+        margin-left: 6vw;
+        background-color: var(--grey-bg) !important;
+        border-radius: 8px !important;
+        box-shadow: 0 0 0 0 !important;
+    }
+
+    .roomCard img {
+        width: 60vw;
+        height: calc(60vw * 0.73);
+    }
+
+    .bottomRoomCard {
+        width: 60vw;
+        height: calc(60vw * 0.73);
+        align-items: flex-start;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .bottomRoomCard h3 {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        color: var(--black);
+        font-size: 3.5vw;
+        margin: 0 8px 0 0;
+        text-align: left;
+    }
+
+    .roomTextView {
+        min-height: 12vw;
+    }
+
+    .bottomRoomCard h4 {
+        font-family: 'Lato', sans-serif;
+        font-weight: 500;
+        color: var(--gold-orange);
+        font-size: 3.8vw;
+        margin: 0;
+    }
+
+    .bottomRoomCard h4 span {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        color: var(--dark-grey);
+        font-size: 2.3vw;
+        margin: 0;
+    }
+
+    .bottomRoomCard .bottomIconView {
+        flex-direction: row;
+        align-items: center;
+        display: flex;
+        margin-top: 12px;
+    }
+
+    .bottomRoomCard .bottomIconView img {
+        width: 3vw;
+        height: 3vw;
+        margin-right: 6px;
+    }
+
+    .bottomRoomCard .bottomIconView span {
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2.6vw;
+        color: var(--dark-grey);
+        opacity: 0.95;
+    }
+
+    .roomsContainer .carousel .slide {
+        min-width: 65% !important;
+    }
 }

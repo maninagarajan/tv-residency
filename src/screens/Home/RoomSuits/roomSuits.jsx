@@ -11,6 +11,9 @@ import Room_3 from '../../../assets/images/Rooms/room_3.png'
 import memberIcon from '../../../assets/images/Rooms/member.png'
 import bedIcon from '../../../assets/images/Rooms/bed.png'
 import wifiIcon from '../../../assets/images/Rooms/wifi.png'
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
+import { Carousel } from 'react-responsive-carousel';
+import arrowIcon from '../../../assets/images/arrow.png'
 
 const RoomItem = ({ item, index }) => {
 
@@ -79,6 +82,27 @@ export const RoomsSuits = () => {
             <div className='roomCardContainer'>
                 {roomsList?.slice(0, 3).map((item, index) => <RoomItem key={item.room} item={item} index={index} />)}
             </div>
+
+            <Carousel
+                animationHandler='slide'
+                showThumbs={false}
+                autoPlay={false}
+                showStatus={false}
+                showArrows={false}
+                infiniteLoop={false}
+                showIndicators={false}
+                swipeable={true}
+                className='roomCardCarousel'
+            >
+                {roomsList?.slice(0, 3).map((item, index) => <RoomItem key={item.room} item={item} index={index} />)}
+            </Carousel>
+
+            <div className='bottomViewSection'>
+                    <NavLink to={'/rooms'} className={'navLink'}>
+                        <p>View all</p>
+                        <img src={arrowIcon} alt="arrow" />
+                    </NavLink>
+                </div>
         </div>
     )
 }
