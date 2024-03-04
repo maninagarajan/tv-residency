@@ -83,19 +83,13 @@ export const RoomsSuits = () => {
                 {roomsList?.slice(0, 3).map((item, index) => <RoomItem key={item.room} item={item} index={index} />)}
             </div>
 
-            <Carousel
-                animationHandler='slide'
-                showThumbs={false}
-                autoPlay={false}
-                showStatus={false}
-                showArrows={false}
-                infiniteLoop={false}
-                showIndicators={false}
-                swipeable={true}
+            <div
                 className='roomCardCarousel'
             >
+                <div className='scrollContainer'>
                 {roomsList?.slice(0, 3).map((item, index) => <RoomItem key={item.room} item={item} index={index} />)}
-            </Carousel>
+                </div>
+            </div>
 
             <div className='bottomViewSection'>
                     <NavLink to={'/rooms'} className={'navLink'}>

@@ -342,12 +342,19 @@
 
     .roomCardCarousel {
         display: flex;
+    }
+
+    .scrollContainer {
         width: 100vw;
+        display: flex;
+        overflow-x: auto;
+        padding-left: 6vw;
     }
 
     .roomCard {
+        flex-shrink: 0;
         width: 60vw;
-        margin-left: 6vw;
+        margin-right: 4vw;
         background-color: var(--grey-bg) !important;
         border-radius: 8px !important;
         box-shadow: 0 0 0 0 !important;
@@ -360,7 +367,7 @@
 
     .bottomRoomCard {
         width: 60vw;
-        height: calc(60vw * 0.73);
+        height: calc(60vw * 0.70);
         align-items: flex-start;
         flex-direction: column;
         display: flex;
