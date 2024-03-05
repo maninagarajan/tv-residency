@@ -54,14 +54,14 @@
     width: 1.5vw;
     height: 1.5vw;
     margin-right: 2px;
-    opacity: 0.75;
+    opacity: 0.8;
 }
 
 .starSection .greyStarStyle {
     width: 1.5vw;
     height: 1.5vw;
     margin-right: 2px;
-    filter: brightness(0) saturate(100%) invert(74%) sepia(12%) saturate(17%) hue-rotate(15deg) brightness(96%) contrast(88%);
+    filter: brightness(0) saturate(100%) invert(79%) sepia(0%) saturate(0%) hue-rotate(82deg) brightness(106%) contrast(93%);
 }
 
 @media (max-width: 1000px) {
@@ -90,7 +90,7 @@
         width: 2vw;
         height: 2vw;
         margin-right: 2px;
-        filter: brightness(0) saturate(100%) invert(74%) sepia(12%) saturate(17%) hue-rotate(15deg) brightness(96%) contrast(88%);
+        filter: brightness(0) saturate(100%) invert(79%) sepia(0%) saturate(0%) hue-rotate(82deg) brightness(106%) contrast(93%);
     }
 }
 
@@ -136,6 +136,6 @@
         width: 3.5vw;
         height: 3.5vw;
         margin-right: 2px;
-        filter: brightness(0) saturate(100%) invert(74%) sepia(12%) saturate(17%) hue-rotate(15deg) brightness(96%) contrast(88%);
+        filter: brightness(0) saturate(100%) invert(79%) sepia(0%) saturate(0%) hue-rotate(82deg) brightness(106%) contrast(93%);
     }
 }
