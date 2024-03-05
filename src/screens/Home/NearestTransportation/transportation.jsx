@@ -72,9 +72,17 @@ export const NearestTransporation = () => {
             <h1 className='sectionHeaderText'>Nearest Transportation</h1>
 
             <div className='transportTab'>
-                <h4 onClick={() => setSelectedTab('Bus')}>Bus Stand</h4>
-                <h4 onClick={() => setSelectedTab('Train')}>Railway Junction</h4>
-                <h4 onClick={() => setSelectedTab('Airport')}>Airport</h4>
+                <h4
+                    onClick={() => setSelectedTab('Bus')}
+                    className={selectedTab == 'Bus' ? 'transportText' : ''}>Bus Stand</h4>
+                <h4
+                    onClick={() => setSelectedTab('Train')}
+                    className={selectedTab == 'Train' ? 'transportText' : ''}
+                >Railway Junction</h4>
+                <h4
+                    className={selectedTab == 'Airport' ? 'transportText' : ''}
+                    onClick={() => setSelectedTab('Airport')}
+                >Airport</h4>
             </div>
             {getTransportList().map((item) => <div key={item.name} className='transportItem'>
                 <img src={item.icon} alt={item.name} />

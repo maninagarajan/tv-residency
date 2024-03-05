@@ -59,3 +59,21 @@ export const roomsList = [
         heater: 'Heater available'
     },
 ]
+
+export const reviewsList = [
+    {
+        name: 'Sri Priya',
+        starRating: 5,
+        review: `Everything was great at this hotel. The hotel had lift and ramp facility which is more comfortable for the elderly person with wheel car. They have amazing staff who were friendly and makes customers feel welcome and asked how our stay was going every time we walked in the door.`
+    },
+    {
+        name: 'VIGNESH.H.gupta',
+        starRating: 5,
+        review: `The hotel stay was exceptional from the warm and welcoming staff to the spotlessly clean rooms. I was impressed by the impeccable service and attention to detail during my stay at the hotel.`
+    },
+    {
+        name: 'Kalpana Sri',
+        starRating: 4,
+        review: `Comfort zoon, Homely care, Kind behaviour, Safe to childerns, Walkable distance, Parking nearby rooms, Separate room for drivers, Lift service also so good.Staff pampering on customer all in way so good.`
+    }
+]

@@ -8,6 +8,7 @@ import { RoomsSuits } from './RoomSuits/roomSuits';
 import { LocationCard } from './Location/location';
 import { GalleryView } from './GalleryView/galleryView';
 import { NearestTransporation } from './NearestTransportation/transportation';
+import { CustomerReviews } from './CustomerReviews/customerReview';
 
 export const HomeComponent = () => {
     return (
@@ -21,6 +22,7 @@ export const HomeComponent = () => {
                 <LocationCard />
                 <GalleryView />
                 <NearestTransporation />
+                <CustomerReviews />
             </div>
         </div>
     )

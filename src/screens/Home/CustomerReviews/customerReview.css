@@ -1,0 +1,141 @@
+.reviewContainer {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    flex-direction: column;
+}
+
+.reviewCard {
+    width: 16vw;
+    height: 16vw;
+    margin-left: 0.8vw;
+    margin-right: 0.8vw;
+    background-color: var(--grey-bg) !important;
+    border-radius: 8px !important;
+    box-shadow: var(--grey) 0 4px 8px 0 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 2vh;
+}
+
+.reviewCard h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    color: var(--black);
+    font-size: 1vw;
+    opacity: 0.9;
+    margin-bottom: 0;
+}
+
+.reviewCard p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: var(--black);
+    font-size: 0.8vw;
+    opacity: 0.9;
+    text-align: center;
+}
+
+.starSection {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.starSection .starStyle {
+    width: 1.5vw;
+    height: 1.5vw;
+    margin-right: 2px;
+    opacity: 0.75;
+}
+
+.starSection .greyStarStyle {
+    width: 1.5vw;
+    height: 1.5vw;
+    margin-right: 2px;
+    filter: brightness(0) saturate(100%) invert(74%) sepia(12%) saturate(17%) hue-rotate(15deg) brightness(96%) contrast(88%);
+}
+
+@media (max-width: 1000px) {
+    .reviewCard {
+        width: 24vw;
+        height: 24vw;
+        margin-left: 1.1vw;
+        margin-right: 1.1vw;
+    }
+
+    .reviewCard h4 {
+        font-size: 1.6vw;
+    }
+    
+    .reviewCard p {
+        font-size: 1.2vw;
+    }
+
+    .starSection .starStyle {
+        width: 2vw;
+        height: 2vw;
+        margin-right: 2px;
+    }
+    
+    .starSection .greyStarStyle {
+        width: 2vw;
+        height: 2vw;
+        margin-right: 2px;
+        filter: brightness(0) saturate(100%) invert(74%) sepia(12%) saturate(17%) hue-rotate(15deg) brightness(96%) contrast(88%);
+    }
+}
+
+@media (max-width: 650px) {
+    .scrollReview {
+        width: 100vw;
+        display: flex;
+        overflow-x: auto;
+        padding-left: 6vw;
+        padding-bottom: 20px;
+    }
+
+    .reviewCard {
+        flex-shrink: 0;
+        width: 48vw;
+        height: 46vw;
+        margin-left: 5vw;
+    }
+
+    .reviewCard:last-child {
+        flex-shrink: 0;
+        width: 45vw;
+        height: 45vw;
+        margin-left: 5vw;
+        margin-right: 6vw;
+    }
+
+    .reviewCard h4 {
+        font-size: 3vw;
+    }
+    
+    .reviewCard p {
+        font-size: 2.4vw;
+    }
+
+    .starSection .starStyle {
+        width: 3.5vw;
+        height: 3.5vw;
+        margin-right: 2px;
+    }
+    
+    .starSection .greyStarStyle {
+        width: 3.5vw;
+        height: 3.5vw;
+        margin-right: 2px;
+        filter: brightness(0) saturate(100%) invert(74%) sepia(12%) saturate(17%) hue-rotate(15deg) brightness(96%) contrast(88%);
+    }
+}

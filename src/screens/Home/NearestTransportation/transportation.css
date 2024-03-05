@@ -31,6 +31,11 @@
     cursor: pointer;
 }
 
+.transportTab .transportText {
+    color: var(--gold-orange);
+    font-weight: 500;
+}
+
 .transportTab h4:last-child {
     border-right: 0px;
 }
