@@ -19,6 +19,7 @@ import NagoreDargahImg from '../../assets/images/AroundUs/Entertainment/Nagore D
 import VelankanniChurchImg from '../../assets/images/AroundUs/Entertainment/Velankanni Church.png'
 import PichavaramMangroveForestImg from '../../assets/images/AroundUs/Entertainment/Pichavaram Mangrove Forest.png'
 import { Card } from '@mui/material';
+import { ModalComponent } from './DetailsModal';
 
 const spiritualList = [
     {
@@ -169,7 +170,7 @@ const entertainmentList = [
     },
 ]
 
-const AroundItem = ({ item }) => {
+const AroundItem = ({ item, setModalVisible, setModalContent }) => {
     return <Card className='aroundCard'>
         <img src={item.img} alt='item.name' className='aroundImg' />
         <div className='aroundBottomDiv'>
@@ -182,7 +183,10 @@ const AroundItem = ({ item }) => {
                     <img src={DirectionIcon} alt="direction" />
                 </button>
 
-                <button>
+                <button onClick={() => {
+                    setModalVisible(true)
+                    setModalContent(item)
+                }}>
                     <span>View Details</span>
                 </button>
             </div>
@@ -190,14 +194,21 @@ const AroundItem = ({ item }) => {
     </Card>
 }
 
-const renderCard = (list) => {
+const renderCard = (list, setModalVisible, setModalContent) => {
     return <div className='aroundListContainer'>
-        {list.map((item) => <AroundItem key={item.name} item={item} />)}
+        {list.map((item) => <AroundItem
+            key={item.name}
+            item={item}
+            setModalVisible={setModalVisible}
+            setModalContent={setModalContent}
+        />)}
     </div>
 }
 
 export const AroundUsComponent = () => {
     const [selectedTab, setSelectedTab] = useState('Spiritual')
+    const [modalVisible, setModalVisible] = useState(false)
+    const [modalContent, setModalContent] = useState(null)
 
     return (
         <div className='container'>
@@ -220,7 +231,17 @@ export const AroundUsComponent = () => {
                 </div>
             </div>
 
-            {renderCard(selectedTab === 'Spiritual' ? spiritualList : entertainmentList)}
+            {renderCard(selectedTab === 'Spiritual' ? spiritualList : entertainmentList, setModalVisible, setModalContent)}
+
+            <ModalComponent
+                modalVisible={modalVisible}
+                handleClose={() => {
+                    setModalVisible(false)
+                    setModalContent(null)
+                }}
+                modalContent={modalContent}
+            />
+
         </div>
     )
 }
