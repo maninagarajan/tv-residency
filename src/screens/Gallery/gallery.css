@@ -1,4 +1,80 @@
 .container {
-    display: 'flex';
     flex: 1;
+    padding-top: 75px;
+}
+
+.screenTop {
+    display: flex;
+}
+
+.screenTop img {
+    width: 100vw;
+    height: 16vw;
+}
+
+.screenTop div {
+    width: 100vw;
+    height: 16vw;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    background-color: var(--light-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.screenTop h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    color: var(--white);
+    font-size: 2vw;
+    margin: 0;
+    margin-top: 10px
+}
+
+.galleryContainer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    flex-direction: row;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+
+.galleryContainer .roomImg {
+    width: 20vw;
+    height: calc(20vw * 0.71);
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-bottom: 2vw;
+    border-radius: 8px
+}
+
+@media (max-width: 1000px) {
+    .screenTop h2 {
+        font-size: 2.8vw;
+    }
+    .galleryContainer .roomImg {
+        width: 25vw;
+        height: calc(25vw * 0.71);
+        margin-left: 1vw;
+        margin-right: 1vw;
+        margin-bottom: 2vw;
+        border-radius: 8px
+    }
+}
+
+@media (max-width: 650px) {
+    .screenTop h2 {
+        font-size: 3.4vw;
+    }
+    .galleryContainer .roomImg {
+        width: 40vw;
+        height: calc(40vw * 0.71);
+        margin-left: 1.5vw;
+        margin-right: 1.5vw;
+        margin-bottom: 3vw;
+        border-radius: 8px
+    }
 }

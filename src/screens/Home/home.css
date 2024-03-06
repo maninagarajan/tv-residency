@@ -5,7 +5,6 @@
 
 .screenContainer {
     flex: 1;
-    padding-top: 75px;
     width: 100vw;
     padding-bottom: 3vh;
 }

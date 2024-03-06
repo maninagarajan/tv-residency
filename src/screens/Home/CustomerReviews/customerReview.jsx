@@ -21,10 +21,10 @@ const ReviewItem = ({ item }) => {
     </Card>
 }
 
-export const CustomerReviews = () => {
+export const CustomerReviews = ({ title = '' }) => {
     return (
         <div className='reviewContainer'>
-            <h1 className='sectionHeaderText'>Our Customers Review</h1>
+            <h1 className='sectionHeaderText'>{title || 'Our Customers Review'}</h1>
 
             <div className='roomCardContainer'>
                 {reviewsList.map((item) => <ReviewItem key={item.name} item={item} />)}
