@@ -2,3 +2,207 @@
     display: 'flex';
     flex: 1;
 }
+
+.aroundUsDiv {
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    margin-bottom: 4vh;
+    margin-top: 4vh;
+    align-items: center;
+}
+
+.aroundListContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
+.aroundCard {
+    width: 22vw;
+    border-radius: 8px !important;
+    margin-bottom: 2vw;
+    background-color: var(--grey-bg) !important;
+    box-shadow: none !important;
+}
+
+.aroundCard .aroundImg {
+    width: 22vw;
+    height: calc(22vw * 0.7);
+}
+
+.aroundCard .aroundBottomDiv {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+}
+
+.aroundBottomDiv h3 {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.15vw;
+    color: var(--black);
+    opacity: 0.95;
+    margin: 0;
+}
+
+.aroundBottomDiv p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.8vw;
+    color: var(--dark-grey);
+    margin: 0;
+    margin-top: 4px;
+}
+
+.aroundBottomDiv .buttonContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+
+.aroundBottomDiv .buttonContainer .directionButton {
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: transparent !important;
+    border: 1px solid var(--gold-orange);
+    width: 48%;
+    border-radius: 6px !important;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.buttonContainer .directionButton span {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 0.75vw;
+    color: var(--gold-orange);
+    margin: 0;
+}
+
+.buttonContainer .directionButton img {
+    width: 1.1vw;
+    height: 1.1vw;
+    margin-left: 4px;
+}
+
+.aroundBottomDiv .buttonContainer button:focus {
+    outline: 0;
+}
+
+.aroundBottomDiv .buttonContainer button {
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: var(--gold-orange) !important;
+    border: 1px solid var(--gold-orange);
+    width: 48%;
+    border-radius: 6px !important;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.aroundBottomDiv button span {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 0.75vw;
+    color: var(--white);
+    margin: 0;
+}
+
+@media (max-width: 1000px) {
+    .aroundListContainer {
+        padding-left: 18vw;
+        padding-right: 18vw;
+    }
+    
+    .aroundCard {
+        width: 30vw;
+    }
+    
+    .aroundCard .aroundImg {
+        width: 30vw;
+        height: calc(30vw * 0.7);
+    }
+
+    .aroundBottomDiv h3 {
+        font-size: 1.5vw;
+    }
+    
+    .aroundBottomDiv p {
+        font-size: 1.2vw;
+    }
+
+    .buttonContainer .directionButton span {
+        font-size: 1.1vw;
+    }
+    
+    .buttonContainer .directionButton img {
+        width: 1.3vw;
+        height: 1.3vw;
+    }
+
+    .aroundBottomDiv button span {
+        font-size: 1.1vw;
+    }
+}
+
+@media (max-width: 650px) {
+    .aroundListContainer {
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+    
+    .aroundCard {
+        width: 80vw;
+    }
+    
+    .aroundCard .aroundImg {
+        width: 80vw;
+        height: calc(80vw * 0.7);
+    }
+
+    .aroundBottomDiv h3 {
+        font-size: 2.8vw;
+    }
+    
+    .aroundBottomDiv p {
+        font-size: 2.4vw;
+    }
+
+    .aroundBottomDiv .buttonContainer .directionButton {
+        width: 48.5%;
+        border-radius: 4px !important;
+    }
+
+    .aroundBottomDiv .buttonContainer button {
+        width: 48.5%;
+        border-radius: 4px !important;
+    }
+
+    .buttonContainer .directionButton span {
+        font-size: 2.2vw;
+    }
+    
+    .buttonContainer .directionButton img {
+        width: 2.4vw;
+        height: 2.4vw;
+    }
+
+    .aroundBottomDiv button span {
+        font-size: 2.2vw;
+    }
+}

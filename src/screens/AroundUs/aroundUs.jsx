@@ -1,12 +1,173 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from '../../components/TopNavBar/navBar';
 import './aroundUs.css';
+import TopImg from '../../assets/images/AroundUs/Around_Top.png'
+import DirectionIcon from '../../assets/images/AroundUs/Direction.png'
+import KethuImg from '../../assets/images/AroundUs/Spiritual/Kethu.png'
+import BudhanImg from '../../assets/images/AroundUs/Spiritual/Budhan.png'
+import SaneeswaranImg from '../../assets/images/AroundUs/Spiritual/Saneeswaran.png'
+import ChevvaiImg from '../../assets/images/AroundUs/Spiritual/Chevvai.png'
+import SukkuranImg from '../../assets/images/AroundUs/Spiritual/Sukkuran.png'
+import SuriyanImg from '../../assets/images/AroundUs/Spiritual/Suriyan.png'
+import RaahuImg from '../../assets/images/AroundUs/Spiritual/Raahu.png'
+import ChandranImg from '../../assets/images/AroundUs/Spiritual/Chandran.png'
+import GuruImg from '../../assets/images/AroundUs/Spiritual/Guru.png'
+import DanishFortImg from '../../assets/images/AroundUs/Entertainment/Danish Fort.png'
+import ZiegenbalgMuseumComplexImg from '../../assets/images/AroundUs/Entertainment/Ziegenbalg Museum Complex.png'
+import PoompuharBeachImg from '../../assets/images/AroundUs/Entertainment/Poompuhar Beach.png'
+import NagoreDargahImg from '../../assets/images/AroundUs/Entertainment/Nagore Dargah.png'
+import VelankanniChurchImg from '../../assets/images/AroundUs/Entertainment/Velankanni Church.png'
+import PichavaramMangroveForestImg from '../../assets/images/AroundUs/Entertainment/Pichavaram Mangrove Forest.png'
+import { Card } from '@mui/material';
+
+const spiritualList = [
+    {
+        name: 'Keezhaperumpallam',
+        subName: 'Kethu',
+        distance: '13.9',
+        img: KethuImg
+    },
+    {
+        name: 'Thiruvengadu',
+        subName: 'Budhan',
+        distance: '14.8',
+        img: BudhanImg
+    },
+    {
+        name: 'Thirunallar Temple',
+        subName: 'Saneeswaran',
+        distance: '22',
+        img: SaneeswaranImg
+    },
+    {
+        name: 'Vaitheeswaran Kovil',
+        subName: 'Chevvai',
+        distance: '22.8',
+        img: ChevvaiImg
+    },
+    {
+        name: 'Kanchanur Temple',
+        subName: 'Sukkuran',
+        distance: '42.2',
+        img: SukkuranImg
+    },
+    {
+        name: 'Suryanar Temple',
+        subName: 'Suriyan',
+        distance: '43.8',
+        img: SuriyanImg
+    },
+    {
+        name: 'Thirunageshwaram',
+        subName: 'Raahu',
+        distance: '51.7',
+        img: RaahuImg
+    },
+    {
+        name: 'Thingalur',
+        subName: 'Chandran',
+        distance: '87.8',
+        img: ChandranImg
+    },
+    {
+        name: 'Alangudi',
+        subName: 'Guru',
+        distance: '157.6',
+        img: GuruImg
+    },
+]
+
+const entertainmentList = [
+    {
+        name: 'Danish Fort',
+        subName: '',
+        distance: '9.2',
+        img: DanishFortImg
+    },
+    {
+        name: 'Ziegenbalg Museum Complex',
+        subName: '',
+        distance: '9.4',
+        img: ZiegenbalgMuseumComplexImg
+    },
+    {
+        name: 'Poompuhar Beach',
+        subName: '',
+        distance: '16.4',
+        img: PoompuharBeachImg
+    },
+    {
+        name: 'Nagore Dargah',
+        subName: '',
+        distance: '34.6',
+        img: NagoreDargahImg
+    },
+    {
+        name: 'Velankanni Church',
+        subName: '',
+        distance: '51.7',
+        img: VelankanniChurchImg
+    },
+    {
+        name: 'Pichavaram Mangrove Forest',
+        subName: '',
+        distance: '54.1',
+        img: PichavaramMangroveForestImg
+    },
+]
+
+const AroundItem = ({ item }) => {
+    return <Card className='aroundCard'>
+        <img src={item.img} alt='item.name' className='aroundImg' />
+        <div className='aroundBottomDiv'>
+            <h3>{item.name}</h3>
+            <p>{item.distance}km(from hotel)</p>
+
+            <div className='buttonContainer'>
+                <button className='directionButton'>
+                    <span>View Direction</span>
+                    <img src={DirectionIcon} alt="direction" />
+                </button>
+
+                <button>
+                    <span>View Details</span>
+                </button>
+            </div>
+        </div>
+    </Card>
+}
+
+const renderCard = (list) => {
+    return <div className='aroundListContainer'>
+        {list.map((item) => <AroundItem key={item.name} item={item} />)}
+    </div>
+}
 
 export const AroundUsComponent = () => {
+    const [selectedTab, setSelectedTab] = useState('Spiritual')
+
     return (
         <div className='container'>
             <Navbar />
-            <h1>Around Us</h1>
+            <div className='screenTop'>
+                <img src={TopImg} alt='Around-Us' />
+                <div>
+                    <h2>Around us</h2>
+                </div>
+            </div>
+            <div className='aroundUsDiv'>
+                <div className='transportTab'>
+                    <h4
+                        onClick={() => setSelectedTab('Spiritual')}
+                        className={selectedTab == 'Spiritual' ? 'transportText' : ''}>Spiritual</h4>
+                    <h4
+                        onClick={() => setSelectedTab('Entertainment')}
+                        className={selectedTab == 'Entertainment' ? 'transportText' : ''}
+                    >Entertainment</h4>
+                </div>
+            </div>
+
+            {renderCard(selectedTab === 'Spiritual' ? spiritualList : entertainmentList)}
         </div>
     )
 }
