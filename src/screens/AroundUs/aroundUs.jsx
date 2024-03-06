@@ -25,55 +25,64 @@ const spiritualList = [
         name: 'Keezhaperumpallam',
         subName: 'Kethu',
         distance: '13.9',
-        img: KethuImg
+        img: KethuImg,
+        gMap: 'https://maps.app.goo.gl/wnsabjLEPvNKBFzz6'
     },
     {
         name: 'Thiruvengadu',
         subName: 'Budhan',
         distance: '14.8',
-        img: BudhanImg
+        img: BudhanImg,
+        gMap: 'https://maps.app.goo.gl/tnbrJzWRHXKi2CnG8'
     },
     {
         name: 'Thirunallar Temple',
         subName: 'Saneeswaran',
         distance: '22',
-        img: SaneeswaranImg
+        img: SaneeswaranImg,
+        gMap: 'https://maps.app.goo.gl/vSZUdPH3axMuSWe96'
     },
     {
         name: 'Vaitheeswaran Kovil',
         subName: 'Chevvai',
         distance: '22.8',
-        img: ChevvaiImg
+        img: ChevvaiImg,
+        gMap: 'https://maps.app.goo.gl/eXfqfUbN3tENL2Ym8'
     },
     {
         name: 'Kanchanur Temple',
         subName: 'Sukkuran',
         distance: '42.2',
-        img: SukkuranImg
+        img: SukkuranImg,
+        gMap: 'https://maps.app.goo.gl/FP67hz96VBiqjanJA'
     },
     {
         name: 'Suryanar Temple',
         subName: 'Suriyan',
         distance: '43.8',
-        img: SuriyanImg
+        img: SuriyanImg,
+        gMap: 'https://maps.app.goo.gl/9AnKAnFcHfzVttpF8'
     },
     {
         name: 'Thirunageshwaram',
         subName: 'Raahu',
         distance: '51.7',
-        img: RaahuImg
+        img: RaahuImg,
+        gMap: 'https://maps.app.goo.gl/YhNxGrVLUaFZC8wM7'
     },
     {
         name: 'Thingalur',
         subName: 'Chandran',
         distance: '87.8',
-        img: ChandranImg
+        img: ChandranImg,
+        gMap: 'https://maps.app.goo.gl/TznhtW3J283rn36b8'
     },
     {
         name: 'Alangudi',
         subName: 'Guru',
         distance: '157.6',
-        img: GuruImg
+        img: GuruImg,
+        gMap: 'https://maps.app.goo.gl/eCoesT56fAz2aQRUA'
     },
 ]
 
@@ -82,37 +91,43 @@ const entertainmentList = [
         name: 'Danish Fort',
         subName: '',
         distance: '9.2',
-        img: DanishFortImg
+        img: DanishFortImg,
+        gMap: 'https://maps.app.goo.gl/SEXVMuygShJH6QU5A'
     },
     {
-        name: 'Ziegenbalg Museum Complex',
+        name: 'Ziegenbalg House',
         subName: '',
         distance: '9.4',
-        img: ZiegenbalgMuseumComplexImg
+        img: ZiegenbalgMuseumComplexImg,
+        gMap: 'https://maps.app.goo.gl/qDPv53qiHcDvrR477'
     },
     {
         name: 'Poompuhar Beach',
         subName: '',
         distance: '16.4',
-        img: PoompuharBeachImg
+        img: PoompuharBeachImg,
+        gMap: 'https://maps.app.goo.gl/gYKMMooyC84RGHSy8'
     },
     {
         name: 'Nagore Dargah',
         subName: '',
         distance: '34.6',
-        img: NagoreDargahImg
+        img: NagoreDargahImg,
+        gMap: 'https://maps.app.goo.gl/Kj92hpZLNb8ZMbWb7'
     },
     {
         name: 'Velankanni Church',
         subName: '',
         distance: '51.7',
-        img: VelankanniChurchImg
+        img: VelankanniChurchImg,
+        gMap: 'https://maps.app.goo.gl/wH9fPprXVNHVe9iJA'
     },
     {
         name: 'Pichavaram Mangrove Forest',
         subName: '',
         distance: '54.1',
-        img: PichavaramMangroveForestImg
+        img: PichavaramMangroveForestImg,
+        gMap: 'https://maps.app.goo.gl/ERXxHmjjPjR4ecif8'
     },
 ]
 
@@ -120,11 +135,11 @@ const AroundItem = ({ item }) => {
     return <Card className='aroundCard'>
         <img src={item.img} alt='item.name' className='aroundImg' />
         <div className='aroundBottomDiv'>
-            <h3>{item.name}</h3>
+            <h3>{item.name}{item.subName ? ` - ${item.subName}` : ''}</h3>
             <p>{item.distance}km(from hotel)</p>
 
             <div className='buttonContainer'>
-                <button className='directionButton'>
+                <button className='directionButton' onClick={() => window.open(item.gMap)}>
                     <span>View Direction</span>
                     <img src={DirectionIcon} alt="direction" />
                 </button>
