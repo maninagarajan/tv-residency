@@ -2,3 +2,122 @@
     display: 'flex';
     flex: 1;
 }
+
+.contactMainContainer {
+    width: 100vw;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    display: flex;
+    flex-direction: row;
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
+.leftContactDiv {
+    width: 30vw;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.rightContactDiv {
+    width: 30vw;
+}
+
+.rightContactDiv img {
+    width: 28vw;
+    height: calc(28vw * 1.16);
+}
+
+.leftContactDiv .locationRow {
+    flex-direction: row;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.leftContactDiv .locationRow p {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1vw;
+    color: var(--black);
+    margin: 0;
+    display: block;
+    opacity: 0.9;
+    margin-top: 2px;
+}
+
+.leftContactDiv .locationRow img {
+    width: 1.8vw;
+    height: 1.8vw;
+    box-shadow: none;
+    cursor: auto;
+    margin-right: 6px;
+    filter: brightness(0) saturate(100%) invert(8%) sepia(29%) saturate(672%) hue-rotate(355deg) brightness(93%) contrast(110%);
+}
+
+@media (max-width: 1000px) {
+    .contactMainContainer {
+        padding-left: 12vw;
+        padding-right: 12vw;
+    }
+
+    .leftContactDiv {
+        width: 38vw;
+    }
+    
+    .rightContactDiv {
+        width: 38vw;
+    }
+    
+    .rightContactDiv img {
+        width: 36vw;
+        height: calc(36vw * 1.16);
+    }
+
+    .leftContactDiv .locationRow p {
+        font-size: 1.5vw;
+        margin-top: 0;
+    }
+    
+    .leftContactDiv .locationRow img {
+        width: 2.2vw;
+        height: 2.2vw;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .contactMainContainer {
+        padding-left: 8vw;
+        padding-right: 8vw;
+        flex-direction: column-reverse;
+    }
+
+    .leftContactDiv {
+        width: 84vw;
+    }
+    
+    .rightContactDiv {
+        width: 84vw;
+    }
+    
+    .rightContactDiv img {
+        width: 84vw;
+        height: calc(84vw * 1.16);
+    }
+
+    .leftContactDiv .locationRow p {
+        font-size: 3.2vw;
+        margin-top: 0;
+    }
+    
+    .leftContactDiv .locationRow img {
+        width: 3.8vw;
+        height: 3.8vw;
+        margin-top: 3px;
+    }
+}
