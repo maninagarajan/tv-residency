@@ -27,10 +27,10 @@ export const AboutTempleComponent = () => {
 
                 <h1 className='roomSectionHeaderText'>Temple</h1>
                 <div className='imageTextRow'>
-                    <div>
+                    <p>
+                        <img src={TempleImg} alt='temple' />
                         {aboutTemple?.map((line) => <p key={line}>{`${line}\n\n`}</p>)}
-                    </div>
-                    <img src={TempleImg} alt='temple' />
+                    </p>
                 </div>
 
                 <h1 className='roomSectionHeaderText'>The ‘New’ Moon</h1>
