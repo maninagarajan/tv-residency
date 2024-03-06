@@ -1,5 +1,4 @@
 import {
-    BrowserRouter,
     Route,
     Routes,
 } from "react-router-dom";
@@ -14,16 +13,14 @@ import { ContactUsComponent } from "../screens/ContactUs/contactUs";
 export const RouterComponent = () => {
 
     return (
-        <BrowserRouter basename="/">
-            <Routes>
-                <Route path="/" element={<HomeComponent />} />
-                <Route path="rooms" element={<RoomsComponent />} />
-                <Route path="gallery" element={<GalleryComponent />} />
-                <Route path="around_us" element={<AroundUsComponent />} />
-                <Route path="about_temple" element={<AboutTempleComponent />} />
-                <Route path="about_us" element={<AboutUsComponent />} />
-                <Route path="contact" element={<ContactUsComponent />} />
-            </Routes>
-        </BrowserRouter>
+        <Routes>
+            <Route path="/" element={<HomeComponent />} />
+            <Route path="rooms" element={<RoomsComponent />} />
+            <Route path="gallery" element={<GalleryComponent />} />
+            <Route path="around_us" element={<AroundUsComponent />} />
+            <Route path="about_temple" element={<AboutTempleComponent />} />
+            <Route path="about_us" element={<AboutUsComponent />} />
+            <Route path="contact" element={<ContactUsComponent />} />
+        </Routes>
     )
 }
