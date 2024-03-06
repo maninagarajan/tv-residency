@@ -1,4 +1,5 @@
 export const address = `Mela street (Near GH and Bus Stand),\nThirukadaiyur,\nTamilnadu - 609311`
+export const gMapLink  ='https://maps.app.goo.gl/X5BCakx5ghYixsej6'
 export const phoneNumber = '+91-866 807 5160'
 export const whatsAppNumber = '+91-842 807 5160'
 export const whatsAppLink = 'https://api.whatsapp.com/send?phone=918428075160&text=Hello'
