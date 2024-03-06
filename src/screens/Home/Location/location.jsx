@@ -6,7 +6,7 @@ import locationIcon from '../../../assets/images/location.png'
 import phoneIcon from '../../../assets/images/phone.png'
 import whatsappIcon from '../../../assets/images/whatsapp.png'
 import mailIcon from '../../../assets/images/mail.png'
-import { address, email, phoneNumber, whatsAppNumber } from '../../../constants/info';
+import { address, email, phoneNumber, whatsAppLink, whatsAppNumber } from '../../../constants/info';
 
 export const LocationCard = () => {
     return (
@@ -30,17 +30,17 @@ export const LocationCard = () => {
                     <h4 className='locationHeader'>Hotel Contact Details</h4>
                     <div className='locationRow'>
                         <img src={phoneIcon} alt={'phone-icon'} />
-                        <p>{phoneNumber}</p>
+                        <p className='whatsappNumber' onClick={() => window.open('tel:'+phoneNumber)}>{phoneNumber}</p>
                     </div>
 
                     <div className='locationRow'>
                         <img src={whatsappIcon} alt={'whatsapp-icon'} />
-                        <p>{whatsAppNumber}</p>
+                        <p className='whatsappNumber' onClick={() => window.open(whatsAppLink)}>{whatsAppNumber}</p>
                     </div>
 
                     <div className='locationRow'>
                         <img src={mailIcon} alt={'email-icon'} />
-                        <p>{email}</p>
+                        <p className='whatsappNumber' onClick={() => window.open('mailto:'+email)}>{email}</p>
                     </div>
                 </div>
             </div>

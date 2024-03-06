@@ -50,6 +50,10 @@
     margin-top: 2px;
 }
 
+.leftContactDiv .locationRow .whatsappNumber {
+    cursor: pointer;
+}
+
 .leftContactDiv .locationRow img {
     width: 1.8vw;
     height: 1.8vw;
