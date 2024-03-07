@@ -5,12 +5,9 @@
 
 .contactMainContainer {
     width: 100vw;
-    padding-top: 4vh;
-    padding-bottom: 4vh;
     display: flex;
     flex-direction: row;
     padding-left: 20vw;
-    padding-right: 20vw;
 }
 
 .leftContactDiv {
@@ -18,10 +15,123 @@
     justify-content: center;
     display: flex;
     flex-direction: column;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
 }
 
 .rightContactDiv {
-    width: 30vw;
+    width: 50vw;
+    background: url('../../assets/images/Contact/Hotel_Front.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glassCard {
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.38);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.2px);
+    -webkit-backdrop-filter: blur(11.2px);
+    width: 26vw;
+    height: 96%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.glassCard form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.glassCard h2 {
+    font-family: "Ibarra Real Nova", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2vw;
+    color: var(--gold-orange);
+    margin-bottom: 0;
+}
+
+form input {
+    font-family: "Inter", sans-serif;
+    font-size: 0.7vw;
+    width: 18vw;
+    margin: 0.8vw 0 0 0;
+    background-color: transparent;
+    border-radius: 6px;
+    border: 1px solid var(--gold-red);
+    color: var(--black);
+    padding: 0.5vw;
+    outline: 0;
+}
+
+form textarea {
+    font-family: "Inter", sans-serif;
+    font-size: 0.7vw;
+    width: 18vw;
+    max-width: 18vw;
+    min-width: 18vw;
+    max-height: 4vw;
+    margin: 0.8vw 0 0 0;
+    background-color: transparent;
+    border-radius: 6px;
+    border: 1.5px solid var(--gold-red);
+    color: var(--black);
+    padding: 0.5vw;
+    outline: 0;
+}
+
+form .formDateDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 19vw;
+}
+
+form .formDateDiv input {
+    width: 13.5vw;
+}
+
+form .formDateDiv span {
+    font-size: 0.7vw;
+    font-family: "Lato", sans-serif;
+    min-width: 5.5vw;
+    margin: 0.8vw 0 0 0;
+    color: var(--black);
+    opacity: 0.9;
+    font-weight: 500;
+}
+
+form button {
+    background-color: var(--gold-red);
+    margin-top: 1.5vw;
+    font-size: 0.8vw;
+    border-radius: 6px;
+    font-family: "Inter", sans-serif;
+    width: 18vw;
+    outline: 0;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+}
+
+form button:hover {
+    outline: 0;
+    border-color: var(--gold-red);
+}
+
+form button img {
+    width: 1.4vw !important;
+    height: 1.4vw !important;
+    margin-left: 4px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(99%) saturate(7%) hue-rotate(202deg) brightness(106%) contrast(100%);
 }
 
 .rightContactDiv img {
@@ -66,17 +176,12 @@
 @media (max-width: 1000px) {
     .contactMainContainer {
         padding-left: 12vw;
-        padding-right: 12vw;
     }
 
     .leftContactDiv {
         width: 38vw;
     }
-    
-    .rightContactDiv {
-        width: 38vw;
-    }
-    
+
     .rightContactDiv img {
         width: 36vw;
         height: calc(36vw * 1.16);
@@ -86,10 +191,60 @@
         font-size: 1.5vw;
         margin-top: 0;
     }
-    
+
     .leftContactDiv .locationRow img {
         width: 2.2vw;
         height: 2.2vw;
+    }
+
+    .glassCard {
+        width: 34vw;
+        height: 90%;
+    }
+    
+    .glassCard h2 {
+        font-size: 1.6vw;
+    }
+
+    form input {
+        font-size: 1vw;
+        width: 24vw;
+        margin: 1vw 0 0 0;
+        padding: 0.8vw;
+    }
+    
+    form textarea {
+        font-size: 1vw;
+        width: 24vw;
+        max-width: 24vw;
+        min-width: 24vw;
+        max-height: 4vw;
+        margin: 1vw 0 0 0;
+        padding: 0.8vw;
+    }
+
+    form button {
+        font-size: 1vw;
+        width: 25vw;
+    }
+    
+    form button img {
+        width: 1.6vw !important;
+        height: 1.6vw !important;
+    }
+
+    form .formDateDiv {
+        width: 25vw;
+    }
+    
+    form .formDateDiv input {
+        width: 16.5vw;
+    }
+    
+    form .formDateDiv span {
+        font-size: 1vw;
+        min-width: 8.5vw;
+        margin: 0.8vw 0 0 0;
     }
 }
 
@@ -97,18 +252,19 @@
 
     .contactMainContainer {
         padding-left: 8vw;
-        padding-right: 8vw;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .leftContactDiv {
         width: 84vw;
     }
-    
+
     .rightContactDiv {
         width: 84vw;
+        margin-bottom: 2vh;
+        background: transparent
     }
-    
+
     .rightContactDiv img {
         width: 84vw;
         height: calc(84vw * 1.16);
@@ -118,10 +274,65 @@
         font-size: 3.2vw;
         margin-top: 0;
     }
-    
+
     .leftContactDiv .locationRow img {
         width: 3.8vw;
         height: 3.8vw;
         margin-top: 3px;
+    }
+
+    .glassCard {
+        width: 70vw;
+        height: 90%;
+        border-radius: 6px;
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+    }
+    
+    .glassCard h2 {
+        font-size: 2.8vw;
+    }
+
+    form input {
+        font-size: 2vw;
+        width: 60vw;
+        margin: 2vw 0 0 0;
+        padding: 1.2vw;
+    }
+    
+    form textarea {
+        font-size: 2vw;
+        width: 60vw;
+        max-width: 60vw;
+        min-width: 60vw;
+        max-height: 8vw;
+        margin: 2vw 0 0 0;
+        padding: 1.2vw;
+    }
+
+    form button {
+        font-size: 2.1vw;
+        width: 62vw;
+        margin-top: 3vw;
+        margin-bottom: 4vw;
+    }
+    
+    form button img {
+        width: 3vw !important;
+        height: 3vw !important;
+    }
+
+    form .formDateDiv {
+        width: 60vw;
+    }
+    
+    form .formDateDiv input {
+        width: 44vw;
+    }
+    
+    form .formDateDiv span {
+        font-size: 2.1vw;
+        min-width: 16vw;
+        margin: 1.2vw 0 0 0;
     }
 }
