@@ -24,22 +24,12 @@ export const aboutUs = [
 
 export const roomsList = [
     {
-        room: 'Executive suite(4 Bed) A/C Room',
-        price: '3,500',
-        maxCount: '4',
+        room: 'Double Delux Non A/C Room',
+        price: '1,500',
+        maxCount: '2',
         extraBedAvailable: 'Extra bed available',
         wifiConnectivity: 'Wifi Connectivity',
-        bedCount: '2',
-        tv: "LED tv",
-        heater: 'Heater available'
-    },
-    {
-        room: 'Executive suite(4 Bed) Non-A/C Room',
-        price: '3,000',
-        maxCount: '4',
-        extraBedAvailable: 'Extra bed available',
-        wifiConnectivity: 'Wifi Connectivity',
-        bedCount: '2',
+        bedCount: '1',
         tv: "LED tv",
         heater: 'Heater available'
     },
@@ -54,12 +44,22 @@ export const roomsList = [
         heater: 'Heater available'
     },
     {
-        room: 'Double Delux Non A/C Room',
-        price: '1,500',
-        maxCount: '2',
+        room: 'Executive suite(4 Bed) Non-A/C Room',
+        price: '3,000',
+        maxCount: '4',
         extraBedAvailable: 'Extra bed available',
         wifiConnectivity: 'Wifi Connectivity',
-        bedCount: '1',
+        bedCount: '2',
+        tv: "LED tv",
+        heater: 'Heater available'
+    },
+    {
+        room: 'Executive suite(4 Bed) A/C Room',
+        price: '3,500',
+        maxCount: '4',
+        extraBedAvailable: 'Extra bed available',
+        wifiConnectivity: 'Wifi Connectivity',
+        bedCount: '2',
         tv: "LED tv",
         heater: 'Heater available'
     },
