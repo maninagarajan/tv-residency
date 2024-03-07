@@ -17,8 +17,8 @@
 }
 
 .mapContainer img {
-    width: 52vw;
-    height: calc(52vw * 0.6);
+    width: 48vw;
+    height: calc(48vw * 0.6);
     border-radius: 0 10px 10px 0;
     box-shadow: var(--grey) 0 8px 12px 0;
     cursor: pointer;
@@ -27,7 +27,7 @@
 .mapTextContainer {
     width: 40vw;
     height: calc(52vw* 0.6);
-    padding-left: 1.5vw;
+    padding-left: 1.75vw;
     justify-content: center;
     display: flex;
     flex-direction: column;
