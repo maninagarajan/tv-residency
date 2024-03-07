@@ -252,16 +252,17 @@ form button img {
 
     .contactMainContainer {
         padding-left: 8vw;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .leftContactDiv {
         width: 84vw;
+        padding-top: 2vh;
     }
 
     .rightContactDiv {
         width: 84vw;
-        margin-bottom: 2vh;
+        margin-top: 3vh;
         background: transparent
     }
 

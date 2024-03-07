@@ -2,7 +2,7 @@ export const address = `Mela street (Near GH and Bus Stand),\nThirukadaiyur,\nTa
 export const gMapLink  ='https://maps.app.goo.gl/X5BCakx5ghYixsej6'
 export const phoneNumber = '+91-842 807 5160'
 export const whatsAppNumber = '+91-866 807 5160'
-export const whatsAppLink = 'https://api.whatsapp.com/send?phone=918668075160&text=Hello'
+export const whatsAppLink = "https://api.whatsapp.com/send?phone=918668075160&text=Hello, I'm interested in ur accommodation. Can I get further more details?"
 export const email = 'residencytempleview@gmail.com'
 export const aboutGod = 'In a shrine, Mother Parvathi appears with Lord Muruga in her right lap, praised as Guhambika. Lord KallaVarana Pillayar appears with the nectar pot in his hand. Lord Brahmma, Sages Agastya, Pulastya, Serpent Vasuki, Mother Durga had worshipped Lord in this temple. The procession deity is Lord Kala Samhara Murthy. Those seeking longevity throng the temple.'
 export const aboutTemple = [
