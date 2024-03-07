@@ -172,7 +172,7 @@ const entertainmentList = [
 
 const AroundItem = ({ item, setModalVisible, setModalContent }) => {
     return <Card className='aroundCard'>
-        <img src={item.img} alt='item.name' className='aroundImg' />
+        <img src={item.img} alt={item.name} className='aroundImg' />
         <div className='aroundBottomDiv'>
             <h3>{item.name}{item.subName ? ` - ${item.subName}` : ''}</h3>
             <p>{item.distance}km(from hotel)</p>

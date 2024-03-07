@@ -1,0 +1,74 @@
+.modalContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+    background-color: var(--modal-grey);
+    box-shadow: var(--light-black) 0 8px 12px 0;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.modalContainer .closeIcon {
+    width: 1.5vw;
+    height: 1.5vw;
+    opacity: 0.5;
+    position: absolute;
+    right: 10px;
+}
+
+.modalContainer .modalRowContainer {
+    flex-direction: row;
+    display: flex;
+    margin-top: 2vw;
+    margin-bottom: 1.2vw;
+    justify-content: space-between;
+    padding-left: 0.25vw;
+    padding-right: 0.25vw;
+}
+
+
+.modalContainer .modalLeftContainer {
+    width: 49%;
+}
+
+.modalLeftContainer h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    color: var(--black);
+    font-size: 1.2vw;
+    margin: 0;
+    opacity: 0.95;
+}
+
+.modalLeftContainer p {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.7vw;
+    color: var(--black);
+    margin-bottom: 0;
+}
+
+.modalLeftContainer .modalTimingContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1vw;
+}
+
+.modalLeftContainer .modalTimingContainer span {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: var(--dark-grey);
+    font-size: 0.75vw;
+    margin-bottom: 8px;
+}
+
+.modalContainer .modalMainImg {
+    width: 49%;
+    height: calc(49% * 0.7);
+    border-radius: 10px;
+}
