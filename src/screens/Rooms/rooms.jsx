@@ -15,6 +15,7 @@ import heater from '../../assets/images/Rooms/heater.png'
 import bedsIcon from '../../assets/images/Rooms/beds.png'
 import tvIcon from '../../assets/images/Rooms/tv.png'
 import alertIcon from '../../assets/images/alert.png'
+import { NavLink } from 'react-router-dom';
 
 const RoomItem = ({ item, index }) => {
     const getImage = () => {
@@ -72,7 +73,7 @@ const RoomItem = ({ item, index }) => {
                     </div>
                 </div>
             </div>
-
+            <span className='bookingsText'>For bookings, <NavLink to={'/contact'}>Contact us</NavLink></span>
             <div className='alertSection'>
                 <img src={alertIcon} alt='alert' />
                 <span>Food can be arranged only based on Customer Needs</span>

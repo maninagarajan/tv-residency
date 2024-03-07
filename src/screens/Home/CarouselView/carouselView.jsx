@@ -6,8 +6,9 @@ import Slide_1 from '../../../assets/images/Home/slide_1.png'
 import Slide_2 from '../../../assets/images/Home/slide_2.png'
 import Slide_3 from '../../../assets/images/Home/slide_3.png'
 import Slide_4 from '../../../assets/images/Home/slide_4.png'
+import Slide_5 from '../../../assets/images/Home/slide_5.png'
 
-const items = [Slide_1, Slide_2, Slide_3, Slide_4]
+const items = [Slide_1, Slide_2, Slide_3, Slide_4, Slide_5]
 
 const Item = (props) => {
     return (
