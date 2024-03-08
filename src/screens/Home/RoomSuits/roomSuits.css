@@ -82,6 +82,12 @@
     background-color: var(--grey-bg) !important;
     border-radius: 8px !important;
     box-shadow: var(--grey) 0 4px 4px 0 !important;
+    transition: 100ms;
+}
+
+.roomCard:hover {
+    box-shadow: var(--grey) 0 2px 12px 2px !important;
+    transform: scale(1.02, 1.02);
 }
 
 .roomCard img {

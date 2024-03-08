@@ -46,6 +46,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: 100ms;
+}
+
+.glassCard form:hover {
+    transform: scale(1.005, 1.005);
 }
 
 .glassCard h2 {
