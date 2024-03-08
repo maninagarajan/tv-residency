@@ -66,6 +66,10 @@
     display: block;
 }
 
+.reachSection .whatsappNumber:hover {
+    cursor: pointer;
+}
+
 .contactSection .locationRow {
     flex-direction: row;
     display: flex;
@@ -195,7 +199,7 @@
         width: 90%;
         text-align: center;
     }
-    
+
     .bottomFooter p:last-child {
         width: 90%;
         text-align: center;
