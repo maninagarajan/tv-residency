@@ -6,6 +6,7 @@ export const whatsAppLink = "https://api.whatsapp.com/send?phone=918668075160&te
 export const email = 'residencytempleview@gmail.com'
 export const facebookLink = 'https://www.facebook.com/profile.php?id=61554370907346&mibextid=ZbWKwL'
 export const instagramLink = 'https://www.instagram.com/temple_view_residency_?igsh=MXgzOGh1Y241NHVubw=='
+export const kasturiBavanamLink = 'https://www.srikasthuribavanam.co.in/';
 export const aboutGod = 'In a shrine, Mother Parvathi appears with Lord Muruga in her right lap, praised as Guhambika. Lord KallaVarana Pillayar appears with the nectar pot in his hand. Lord Brahmma, Sages Agastya, Pulastya, Serpent Vasuki, Mother Durga had worshipped Lord in this temple. The procession deity is Lord Kala Samhara Murthy. Those seeking longevity throng the temple.'
 export const aboutTemple = [
     `Most of the temples are known either by the name of the Lord or His Consort. For Example, Madurai reminds us Lordess Meenakshi, Chidambaram for Lord Nataraj Kancheepuram for Lordess Kamatchi and so on. However, there are a few temples that are well-known for the Lord and his Consort and Thirukadaiyur is one among them. The Amirthakadeshwarar Abirami Temple of Thirukadaiyur is associated with the legends of Markandeya and Abirami Battar.`,
