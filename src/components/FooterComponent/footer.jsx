@@ -1,18 +1,22 @@
 import React from 'react';
 import './footer.css';
 import LogoImg from '../../assets/images/Logo_White.png'
-import { address, email, phoneNumber, whatsAppLink, whatsAppNumber } from '../../constants/info';
+import { address, email, facebookLink, instagramLink, phoneNumber, whatsAppLink, whatsAppNumber } from '../../constants/info';
 import locationIcon from '../../assets/images/location.png'
 import phoneIcon from '../../assets/images/phone.png'
 import whatsappIcon from '../../assets/images/whatsapp.png'
 import mailIcon from '../../assets/images/mail.png'
 import { Tooltip } from '@mui/material';
+import FacebookIcon from '../../assets/images/facebook.png'
+import InstagramIcon from '../../assets/images/instagram.png'
 
 export const FooterComponent = () => {
     return (
         <div className='footerContainer'>
             <div className='topFooter'>
-                <img src={LogoImg} alt='Temple View Residency' className='footer-logo' />
+                <div className='logoSection'>
+                    <img src={LogoImg} alt='Temple View Residency' className='footer-logo' />
+                </div>
 
                 <div className='reachSection'>
                     <h3>Reach us</h3>
@@ -48,6 +52,18 @@ export const FooterComponent = () => {
                             <p className='whatsappNumber' onClick={() => window.open('mailto:' + email)}>{email}</p>
                         </Tooltip>
                     </div>
+                </div>
+
+                <div className='reachSection'>
+                    <h3>Follow us</h3>
+                    <a className='socialMediaDiv' href={facebookLink} target='_blank'>
+                        <img src={FacebookIcon} alt="facebook" />
+                        <p>Facebook</p>
+                    </a>
+                    <a className='socialMediaDiv' href={instagramLink} target='_blank'>
+                        <img src={InstagramIcon} alt="instagram" />
+                        <p>Instagram</p>
+                    </a>
                 </div>
             </div>
 

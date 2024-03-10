@@ -16,6 +16,22 @@
     height: calc(10vw * 0.58);
 }
 
+.logoSection {
+    width: 25vw;
+}
+
+.socialMediaDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0.5vw;
+}
+
+.socialMediaDiv img {
+    margin-right: 8px !important;
+    margin-top: 0px !important;
+}
+
 .reachSection {
     width: 25vw;
     padding-left: 1.5vw;
@@ -145,6 +161,10 @@
     .bottomFooter p {
         font-size: 1.15vw;
     }
+
+    .logoSection {
+        width: 16vw;
+    }
 }
 
 @media (max-width: 650px) {
@@ -177,6 +197,28 @@
 
     .reachSection p {
         font-size: 3.5vw;
+    }
+
+    .reachSection:last-child {
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+    }
+
+    .socialMediaDiv {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 1vw;
+        margin-top: 0.5vw;
+    }
+
+    .socialMediaDiv img {
+        margin-right: 10px !important;
+        margin-top: 0px !important;
+    }
+
+    .logoSection {
+        width: auto;
     }
 
     .bottomFooter {
