@@ -24,22 +24,43 @@
     font-family: "Ibarra Real Nova", serif;
     font-weight: 400;
     color: var(--black);
-    font-size: 1.4vw;
-    text-align: center;
-    margin: 0 20vw 2vh 20vw;
+    font-size: 1.2vw;
     opacity: 0.9;
 }
 
-.propertyText a {
+.propertiesDiv a {
     color: var(--gold-orange);
     text-decoration: underline;
-    margin-left: 4px;
-    font-size: 1.2vw;
+    font-size: 1.0vw;
+    align-self: center;
+    margin-top: 0.8vw;
 }
 
-.propertyText a:hover {
+.propertiesDiv a:hover {
     color: var(--gold-orange);
     text-decoration: underline;
+    font-weight: 600;
+}
+
+.propertiesDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2.5vw;
+    padding-top: 1vw;
+    width: 100vw;
+    border-radius: 4px;
+}
+
+.propertiesDiv img {
+    width: 18vw;
+}
+
+.propertiesDiv div {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2vw;
 }
 
 @media (max-width: 1000px) {
@@ -48,13 +69,15 @@
         margin: 0 15vw 2vh 15vw;
     }
     .aboutUsContainer .propertyText {
-        font-size: 2.4vw;
-        margin: 0 15vw 1vh 15vw;
+        font-size: 2vw;
     }
     
-    .propertyText a {
-        margin-left: 4px;
-        font-size: 2.2vw;
+    .propertiesDiv a {
+        font-size: 1.65vw;
+    }
+
+    .propertiesDiv img {
+        width: 28vw;
     }
 }
 
@@ -66,12 +89,19 @@
         opacity: 0.8;
     }
     .aboutUsContainer .propertyText {
-        font-size: 3.8vw;
-        margin: 0 5vw 1vh 5vw;
+        font-size: 3.6vw;
+    }
+
+    .propertiesDiv {
+        flex-direction: column;
     }
     
-    .propertyText a {
-        margin-left: 4px;
-        font-size: 3.5vw;
+    .propertiesDiv a {
+        font-size: 3vw;
+        margin-bottom: 3vw;
+    }
+
+    .propertiesDiv img {
+        width: 60vw;
     }
 }

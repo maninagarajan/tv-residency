@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../../components/TopNavBar/navBar';
 import './aboutUs.css';
 import TopImg from '../../assets/images/About_Us/AboutUs_Top.png'
+import SkBavanam from '../../assets/images/About_Us/skBavanam.png'
 import { aboutUs, kasturiBavanamLink } from '../../constants/info';
 import { FacilitiesServices } from '../../components/FacilitiesServices/facilities';
 import { CustomerReviews } from '../Home/CustomerReviews/customerReview';
@@ -22,7 +23,18 @@ export const AboutUsComponent = () => {
                 {aboutUs?.map((line) => <p key={line} className='aboutContent'>{`${line}\n\n`}</p>)}
 
                 <h1 className='roomSectionHeaderText'>Other Properties</h1>
-                <span className='propertyText'>Sri Kasthuri Bavanam<a href={kasturiBavanamLink} target='_blank'>Visit</a></span>
+                <div className='propertiesDiv'>
+                    <div>
+                        <img src={SkBavanam} alt="sk bavanam" />
+                        <a href={kasturiBavanamLink} target='_blank'>Go to Site</a>
+                    </div>
+                    <div>
+                        <span className='propertyText'>No. 6/108, West Car Street,</span>
+                        <span className='propertyText'>Near Canara Bank,</span>
+                        <span className='propertyText'>Thirukadaiyur - 609311</span>
+                    </div>
+                </div>
+
 
                 <FacilitiesServices />
                 <CustomerReviews title={'Guest Reviews'} />
