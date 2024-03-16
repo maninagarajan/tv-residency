@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 4vh;
+    padding-top: 1vh;
     padding-left: 10vw;
     padding-right: 10vw;
     flex-direction: column;
@@ -179,7 +179,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-top: 2vh;
+        padding-top: 0.1vh;
         padding-left: 10vw;
         padding-right: 10vw;
         flex-direction: column;

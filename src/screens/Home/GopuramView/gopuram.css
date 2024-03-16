@@ -3,9 +3,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 7.5vh;
+    padding-top: 4vh;
     padding-left: 10vw;
     padding-right: 10vw;
+    padding-bottom: 4vh;
+    transition: 500ms;
+    pointer-events: none;
+}
+
+.gopuramContainer:hover {
+    background-color: var(--gold-orange);
 }
 
 .gopuramTextView {
@@ -36,6 +43,18 @@
     margin-bottom: 10px;
 }
 
+.gopuramContainer:hover .gopuramTextView h1 {
+    color: var(--white)
+}
+
+.gopuramContainer:hover .gopuramTextView span {
+    color: var(--white)
+}
+
+.gopuramContainer:hover .gopuramTextView p {
+    color: var(--white)
+}
+
 .gopuramTextView p {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
@@ -48,6 +67,7 @@
     width: 35vw;
     height: calc(35vw * 0.63);
     display: inline;
+    pointer-events: auto;
 }
 
 .gopuramContainer .mobileImg {
@@ -88,7 +108,7 @@
     .gopuramContainer .desktopImg {
         display: none;
     }
-    
+
     .gopuramContainer .mobileImg {
         width: 80vw;
         height: calc(80vw * 0.63);
