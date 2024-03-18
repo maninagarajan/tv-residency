@@ -23,7 +23,7 @@ const manifest = {
       "sizes": "512x512"
     }
   ],
-  "start_url": "/",
+  "start_url": ".",
   "display": "standalone",
   "theme_color": "#c2700f",
   "background_color": "#fbf8ef",
@@ -32,7 +32,11 @@ const manifest = {
 }
 
 export default defineConfig({
-  plugins: [viteCommonjs(), react(), VitePWA(manifest)],
+  plugins: [viteCommonjs(), react(), VitePWA({
+    registerType: 'autoUpdate', devOptions: {
+      enabled: true
+    }
+  })],
   build: {
     outDir: 'build',
   },
