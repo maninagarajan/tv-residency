@@ -26,7 +26,9 @@ const manifest = {
   "start_url": "/",
   "display": "standalone",
   "theme_color": "#c2700f",
-  "background_color": "#fbf8ef"
+  "background_color": "#fbf8ef",
+  "theme-color": "#c2700f",
+  "background-color": "#fbf8ef"
 }
 
 export default defineConfig({
