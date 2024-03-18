@@ -14,6 +14,7 @@ const ReviewItem = ({ item }) => {
                     key={number}
                     src={starIcon}
                     className={item.starRating < number ? 'greyStarStyle' : 'starStyle'}
+                    alt='star-icon'
                 />
             })}
         </div>
