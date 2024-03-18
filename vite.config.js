@@ -13,12 +13,12 @@ const manifest = {
       "type": "image/png"
     },
     {
-      "src": "public/favicon.png",
+      "src": "public/icon192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "public/favicon.png",
+      "src": "public/icon512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
@@ -32,11 +32,7 @@ const manifest = {
 }
 
 export default defineConfig({
-  plugins: [viteCommonjs(), react(), VitePWA({
-    registerType: 'autoUpdate', devOptions: {
-      enabled: true
-    }
-  })],
+  plugins: [viteCommonjs(), react(), VitePWA(manifest)],
   build: {
     outDir: 'build',
   },
