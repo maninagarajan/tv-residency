@@ -8,19 +8,19 @@ const manifest = {
   name: "Temple View Residency",
   icons: [
     {
-      src: "./public/favicon.png",
+      src: "favicon.png",
       sizes: "64x64 32x32 24x24 16x16",
       type: "image/png",
       purpose: "any"
     },
     {
-      src: "./public/icon192.png",
+      src: "icon192.png",
       type: "image/png",
       sizes: "192x192",
       purpose: "any"
     },
     {
-      src: "./public/icon512.png",
+      src: "icon512.png",
       type: "image/png",
       sizes: "512x512",
       purpose: "any"
