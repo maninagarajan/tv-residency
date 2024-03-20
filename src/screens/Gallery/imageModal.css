@@ -1,0 +1,115 @@
+.modalImgContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 56vw;
+    background-color: var(--modal-grey);
+    box-shadow: var(--light-black) 0 8px 12px 0;
+    padding: 0.75vw;
+    border-radius: 8px;
+}
+
+.modalImgContainer .closeIcon {
+    width: 1.5vw;
+    height: 1.5vw;
+    opacity: 0.5;
+    position: absolute;
+    right: 0.75vw;
+}
+
+.carouselParent {
+    margin-top: 2vw;
+    width: 56vw;
+    height: calc(56vw * 0.71);
+}
+
+.carouselImgDiv {
+    width: 56vw;
+    height: calc(56vw * 0.71);
+    background-color: var(--grey);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.carouselImage {
+    width: 56vw;
+    height: calc(56vw * 0.71);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.carouselParent .left-button {
+    position: absolute;
+    top: 47%;
+    left: 0;
+    z-index: 10;
+    background-color: var(--light-black);
+    padding: 0.5em;
+    border-radius: 0 8px 8px 0;
+    outline: 0;
+}
+
+.carouselParent .right-button {
+    position: absolute;
+    top: 47%;
+    right: 0;
+    z-index: 10;
+    background-color: var(--light-black);
+    padding: 0.5em;
+    border-radius: 8px 0 0 8px;
+    outline: 0;
+}
+
+@media (max-width: 1000px) {
+    .modalImgContainer {
+        width: 75vw;
+    }
+    .modalImgContainer .closeIcon {
+        width: 1.75vw;
+        height: 1.75vw;
+    }
+    .carouselParent {
+        margin-top: 2.8vw;
+        width: 75vw;
+        height: calc(75vw * 0.71);
+    }
+    
+    .carouselImgDiv {
+        width: 75vw;
+        height: calc(75vw * 0.71);
+    }
+    
+    .carouselImage {
+        width: 75vw;
+        height: calc(75vw * 0.71);
+    }
+}
+
+
+@media (max-width: 650px) {
+    .modalImgContainer {
+        padding: 1.5vw;
+    }
+    .modalImgContainer .closeIcon {
+        width: 3.5vw;
+        height: 3.5vw;
+        right: 1vw;
+    }
+    .carouselParent {
+        margin-top: 4.2vw;
+    }
+
+    .carouselParent .left-button {
+        top: 42%;
+    }
+
+    .carouselParent .right-button {
+        top: 42%;
+    }
+
+    .carouselParent .arrowIcon {
+        width: 4vw;
+        height: 4vw;
+    }
+}

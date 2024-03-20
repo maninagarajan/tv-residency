@@ -48,7 +48,14 @@
     margin-left: 1vw;
     margin-right: 1vw;
     margin-bottom: 2vw;
-    border-radius: 8px
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.galleryContainer .roomImg:hover {
+    box-shadow: 0 0 16px 0 var(--dark-grey);
+    transform: translateY(-2px);
 }
 
 @media (max-width: 1000px) {

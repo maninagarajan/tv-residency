@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from '../../components/TopNavBar/navBar';
 import './gallery.css';
 import GalleryImg1 from '../../assets/images/Gallery/1.png'
@@ -14,11 +14,15 @@ import GalleryImg10 from '../../assets/images/Gallery/10.png'
 import GalleryImg11 from '../../assets/images/Gallery/11.png'
 import GalleryImg12 from '../../assets/images/Gallery/12.png'
 import Gallery_Top from '../../assets/images/Gallery/Gallery_Top.png';
+import { ImagesModal } from './imageModal';
 
 let galleryList = [GalleryImg1, GalleryImg2, GalleryImg3, GalleryImg4, GalleryImg5, GalleryImg6,
     GalleryImg7, GalleryImg8, GalleryImg9, GalleryImg10, GalleryImg11, GalleryImg12]
 
 export const GalleryComponent = () => {
+    const [modalVisible, setModalVisible] = useState(false)
+    const [modalContent, setModalContent] = useState(null)
+
     return (
         <div className='container'>
             <Navbar />
@@ -30,8 +34,24 @@ export const GalleryComponent = () => {
             </div>
 
             <div className='galleryContainer'>
-                {galleryList.map((imgPath) => <img src={imgPath} key={imgPath} className='roomImg' />)}
+                {galleryList.map((imgPath, index) => <img
+                    src={imgPath}
+                    key={imgPath}
+                    className='roomImg'
+                    alt={`gallery-${index + 1}`}
+                    onClick={() => {
+                        setModalVisible(true)
+                        setModalContent(galleryList)
+                    }} />)}
             </div>
+            <ImagesModal
+                modalVisible={modalVisible}
+                handleClose={() => {
+                    setModalVisible(false)
+                    setModalContent(null)
+                }}
+                modalContent={modalContent}
+            />
         </div>
     )
 }
