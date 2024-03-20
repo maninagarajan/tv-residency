@@ -22,6 +22,7 @@ let galleryList = [GalleryImg1, GalleryImg2, GalleryImg3, GalleryImg4, GalleryIm
 export const GalleryComponent = () => {
     const [modalVisible, setModalVisible] = useState(false)
     const [modalContent, setModalContent] = useState(null)
+    const [imageIndex, setImageIndex] = useState(null)
 
     return (
         <div className='container'>
@@ -42,6 +43,7 @@ export const GalleryComponent = () => {
                     onClick={() => {
                         setModalVisible(true)
                         setModalContent(galleryList)
+                        setImageIndex(index)
                     }} />)}
             </div>
             <ImagesModal
@@ -49,8 +51,10 @@ export const GalleryComponent = () => {
                 handleClose={() => {
                     setModalVisible(false)
                     setModalContent(null)
+                    setImageIndex(null)
                 }}
                 modalContent={modalContent}
+                imageIndex={imageIndex}
             />
         </div>
     )
