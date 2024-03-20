@@ -127,6 +127,7 @@
 .bottomFooter p span {
     color: var(--gold-yellow);
     font-weight: 500;
+    font-family: "Ibarra Real Nova", serif;
 }
 
 @media (max-width: 1000px) {

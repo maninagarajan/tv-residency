@@ -61,6 +61,10 @@
     outline: 0;
 }
 
+.carouselParent .arrowIcon {
+    fill: var(--white)
+}
+
 @media (max-width: 1000px) {
     .modalImgContainer {
         width: 75vw;
@@ -90,6 +94,7 @@
 @media (max-width: 650px) {
     .modalImgContainer {
         padding: 1.5vw;
+        width: 80vw;
     }
     .modalImgContainer .closeIcon {
         width: 3.5vw;
@@ -98,6 +103,18 @@
     }
     .carouselParent {
         margin-top: 4.2vw;
+        width: 80vw;
+        height: calc(80vw * 0.71);
+    }
+
+    .carouselImgDiv {
+        width: 80vw;
+        height: calc(80vw * 0.71);
+    }
+    
+    .carouselImage {
+        width: 80vw;
+        height: calc(80vw * 0.71);
     }
 
     .carouselParent .left-button {
