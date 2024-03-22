@@ -56,11 +56,11 @@ export const FooterComponent = () => {
 
                 <div className='reachSection'>
                     <h3>Follow us</h3>
-                    <a className='socialMediaDiv' href={facebookLink} target='_blank'>
+                    <a className='socialMediaDiv facebookDiv' href={facebookLink} target='_blank'>
                         <img src={FacebookIcon} alt="facebook" />
                         <p>Facebook</p>
                     </a>
-                    <a className='socialMediaDiv' href={instagramLink} target='_blank'>
+                    <a className='socialMediaDiv instagramDiv' href={instagramLink} target='_blank'>
                         <img src={InstagramIcon} alt="instagram" />
                         <p>Instagram</p>
                     </a>
