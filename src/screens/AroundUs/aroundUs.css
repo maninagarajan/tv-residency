@@ -27,6 +27,11 @@
     margin-bottom: 2vw;
     background-color: var(--grey-bg) !important;
     box-shadow: none !important;
+    transition: 500ms;
+}
+
+.aroundCard:hover {
+    box-shadow: 0 0 15px 2px var(--grey) !important;
 }
 
 .aroundCard .aroundImg {
