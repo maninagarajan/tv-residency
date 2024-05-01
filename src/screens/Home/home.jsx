@@ -9,6 +9,7 @@ import { LocationCard } from './Location/location';
 import { GalleryView } from './GalleryView/galleryView';
 import { NearestTransporation } from './NearestTransportation/transportation';
 import { CustomerReviews } from './CustomerReviews/customerReview';
+import { BookingSection } from './BookingComponent/bookings';
 
 export const HomeComponent = () => {
     return (
@@ -16,6 +17,7 @@ export const HomeComponent = () => {
             <Navbar />
             <div className='screenContainer'>
                 <ImageCarouselComponent />
+                <BookingSection />
                 <FacilitiesServices />
                 <GopuramView />
                 <RoomsSuits />
